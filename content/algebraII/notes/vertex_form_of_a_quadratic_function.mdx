@@ -1,0 +1,106 @@
+---
+title: "Vertex Form and the Standard Form of Quadratic Functions"
+description: "Learn about the vertex and standard forms of quadratic functions."
+date: "1/1/2023"
+thumbnail: /images/standard-vertex-forms.webp
+---
+
+The equation for the vertex form of a parabola is $y = a(x-h)^2 + k$. $a$ represents the vertical stretch factor (if it is a negative value, the parabola opens downward, and if it is a positive value, the parabola will open upwards). $h$ represents the $x$ value of the vertex (and the quadratic's axis of symmetry) and $k$ represents the $y$ value of the vertex.
+
+![Quadratic Vertex form](/images/vertexformquadttwerwre.png)                                                                               
+
+<DesmosGraph divID={3434314413} equations={['y=(x-0)^2 + 0']} />
+
+In order to convert $y=ax^2+bx+c$ or standard quadratic form to vertex form $y=a(x-h)^2+k$, it is required to complete the square.
+
+## Model Example 1
+
+Convert the equation $y = 2x^2-4x+5$ from standard form to vertex form, ($y=a(x-h)^2+k$), and state the vertex of the parabola.
+
+Step One. To complete the square of the equation, isolate the terms $x^2$ and $x$ by doing inverse operations, or in this case subtracting $5$ from both sides of the equation.
+
+Result: $y-5=2x^2-4x$                                                                              
+
+Step Two. Since a leading coefficient of $1$ is necessary for completing the square, so the current leading coefficient of $2$ needs to be factored out.
+
+Result: $y-5=2(x^2-2x)$
+
+Step Three. Create a perfect square trinomial by keeping $y$ and adding the $2$ from the other side of the equation, so that both sides of the equation could be equal; find the missing value for both sides of the equation by dividing the coefficient by $2$ and squaring it, then multiply the number equivalent to the coefficient by the previous number, and also adding the squared value to the inside of the parenthesis.
+
+![perfect Square Trinomial example](/images/factoring-perfect-square-trinomials.png)
+
+Result: $y-5+(2*1) = 2(x^2 - 2x + 1)$
+
+Step Four. Simplify both sides of the equation, then convert the right side of the equation to a perfect square in parenthesis multiplied by the leading coefficient.
+
+Result: $y-3=2(x-1)^2$
+
+Step Five. Isolate $y$, by doing inverse operations on the left side of the equation, or in this case adding $3$ to both sides of the equation.
+
+Result: $y=2(x-1)^2 + 3$
+
+Final Answer: $y = 2(x-1)^2 + 3$ and Vertex: (1,3) (The value of h is negative and the value of k is positive).
+
+<DesmosGraph divID={534245324} equations={['2(x-1)^2 + 3']} />
+
+## Model Example 2
+
+Convert the equation $y = -3(x+1)^2 - 6$ from vertex form to standard form, ($y=a(x-h)^2+k$).
+
+Step One. Expand the square, $(x-h)^2$ to $(x-h)(x+h)$
+
+Result: $-3(x+1)(x+1)-6$ to $-3(x^2 + 2x + 1) - 6$
+
+Step Two. Distribute the variable $a$.                                                                              
+
+Result: $a = -3$ to $y=-3x^2 - 6x - 3 - 6$                                                                              
+
+Step Three. Combine any like terms present in the prior step.                                                                               
+
+Final Result: $y=-3x^2-6x-9$                                                                               
+
+<DesmosGraph divID={5342452332324} equations={['y=-3x^2 - 6x -9']} />
+
+## Practice Example 1                                                                              
+
+### The graph of a quadratic function is shown below. An equation that represents the function could be...                                       
+
+![Quadratic Vertex Graph 1](/images/Screenshot_20230106_052624.png)                                                                               
+
+<DesmosCalc divID={432433242}/>                                                                              
+
+<MultipleChoice quizLabel="Practice Example 1" choices={["q(x)= 1/2 (x+15)^2 - 25", "q(x)= -1/2 (x+15)^2 - 25", "q(x)= 1/2 (x-15)^2 + 25", "q(x)= -1/2 (x-15)^2 + 25"]} correctAns="q(x)= -1/2 (x-15)^2 + 25"/>
+
+## Practice Example 2                                                                              
+### Which equation is equivalent to $y = x^2 + 24x - 18$ ?                                                                              
+
+<DesmosCalc divID={53543}/>                                                                                                                     
+<MultipleChoice quizLabel="Practice Example 2" choices={["y=(x+12)^2 - 162", "y=(x+12)^2 + 126", "y=(x-12)^2 - 162", "y=(x-12)^2 + 126"]} correctAns="y=(x+12)^2 - 162"/>
+
+## Practice Example 3                                                                              
+
+### The function $f(x) = 3x^2 + 12x + 11$ can be written in vertex form as...
+
+<DesmosCalc divID={433234}/>                                                                                                                     
+
+<MultipleChoice quizLabel="Practice Example 3" choices={["f(x)=(3x + 6)^2 - 25", "f(x)=3(x+6)^2 - 25", "f(x)=3(x+2)^2 - 1", "f(x)=3(x+2)^2 + 7"]} correctAns="f(x)=3(x+2)^2 - 1"/>
+
+## Practice Example 4                                                                              
+
+### Determine and state the vertex of $f(x) = x^2 - 2x - 8$ using the method of completing the square.                                                                              
+
+<DesmosCalc divID={534543435}/>                                                                              
+
+<ShortResponse quizLabel="Practice Example 5" regex="^(?=.*1)(?=.*-9).+" />                                                                                                                     
+
+## Practice Example 5                                                                              
+
+### a) Given the function f(x) = -x2 + 8x + 9 , state whether the vertex represents a maximum or minimum point for the function.                                                                              
+
+### b) Rewrite f(x) in vertex form by completing the square.                                                                              
+
+<DesmosCalc divID={5656567}/>                                                                              
+
+<ShortResponse quizLabel="Practice Example 5a" regex="^(?=.*maximum).+" />                                                                              
+
+<ShortResponse quizLabel="Practice Example 5b" regex="^(?=.*x)(?=.*-)(?=.*4)(?=.*2)(?=.*25).+" />

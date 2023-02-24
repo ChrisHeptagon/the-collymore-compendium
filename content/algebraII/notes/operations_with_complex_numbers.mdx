@@ -1,0 +1,89 @@
+---
+title: "Operations with Complex Numbers"
+description: "Learn about this special type of number."
+date: "1/1/2023"
+thumbnail: /images/operations-with-complex-numbersthumbnail.png
+---
+A complex number is a combination of a real number, like the number $5$, and an imaginary number, like $4i$, and is written together as $5 + 4i$. Complex numbers are written in the form of $a + bi$ where $a$ and $b$ are real numbers.
+
+![Complex Number Example](/images/compexlenumbers.jpg)
+
+Complex numbers can be added through adding the real and the imaginary parts separately and writing the answer in $a + bi$ form. Ex: $(3 + 2i) + (5 - 7i)$ is equal to $8 - 5i$
+
+When subtracting complex numbers take note that the $b$ variable would always be a negative value, due to the fact that negative and positive integers when multiplied together, always are equal to a negative. Ex: $(3 + 2i) - (5 - 7i)$ to $3 + 2i - 5 + 7i$ is equal to $-2 + 9i$
+
+Complex numbers are multiplied in the same way binomials are multiplied by using the FOIL method. Keep note that anytime an $i^2$ appears within the solution, it should be substituted by a -1.
+
+![FOIL Demo](/images/foil-method.png)
+
+In order to divide complex numbers, it is necessary to find the conjugate term of the denominator, which is a complex number with an equal real part and an imaginary part with the opposite sign. The reason why this is done is due to the fact that the products of conjugate numbers are always real numbers.
+
+![Conjugate Complex Number](/images/complex-conjugates.png)
+
+## Model Example 1
+
+### Solve $(3 + 2i)(5 - 7i)$:
+
+First conduct the FOIL method on the equation. Result: $15 - 21i + 10i - 14i^2$
+
+Then combine like terms. Final Result: $29 - 11i$
+
+## Model Example 2
+
+### Multiply the complex numbers $3 - 4i$ and $2 + 5i$
+
+First conduct the FOIL method on the equation. Result: $6 + 15i - 8i - 20i^2$
+
+Remember, when $i^2$ is found within the problem, always replace it with a $-1$. Result: $6 + 15i - 8i +20$
+
+Then combine terms. Final Result: $26 + 7i$
+
+## Model Example 3
+
+### Divide the complex number $20 - 4i$ by $3 + 2i$
+
+First determine the conjugate number for the denominator (in this case the denominator is $3 + 2i$). Result: The conjugate complex number is $3 - 2i$
+
+Next setup the expression $\frac{20-4i}{3+2i}*\frac{3-2i}{3-2i}$ and cross multiply using the expression $\frac{(20-4i)(3-2i)}{(3+2i)(3-2i)}$. After cross-multiplying the two fractions, the result should be $\frac{52-52i}{13}$.
+
+Then divide both terms by $13$ to simplify the equation further. The final answer is $4 - 4i$
+
+## Practice Example 1
+
+### The product of $5-2i$ and $i$ is...
+
+<DesmosCalc divID="645465645"/>
+
+<MultipleChoice quizLabel="Practice Example 1" choices={['7','2 + 5i','5- 2i','-2 + 5i']} correctAns="2 + 5i"/>
+
+## Practice Example 2
+
+### The product of $(2-2i)$ and $(2+2i)$
+
+<DesmosCalc divID="676765765765"/>
+
+<MultipleChoice quizLabel="Practice Example 2" choices={['0','8','4 - 4i','4']} correctAns='8'/>
+
+## Practice Example 3
+
+### The product of $(-2+6i)(3+4i)$.
+
+<DesmosCalc divID="43244321432143226535665"/>
+
+<MultipleChoice quizLabel="Practice Example 3" choices={['-6 + 24i','-6 - 24i','18 + 10i','-30 + 10i']} correctAns='-30 + 10i'/>
+
+## Practice Example 4
+
+### Express $(3-2i)^2$ in $a+bi$ form.
+
+<DesmosCalc divID="3413133243243244423342"/>
+
+<ShortResponse quizLabel="Practice Example 4" regex="^(?=.*5)(?=.*-)(?=.*12)(?=.*i).+" />
+
+## Practice Example 5
+
+### Express the complex number $(1+2i)^4$ in $a + bi$ form.
+
+<DesmosCalc divID="434343543"/>
+
+<ShortResponse quizLabel="Practice Example 5" regex="^(?=.*-)(?=.*7)(?=.*24)(?=.*i).+" />

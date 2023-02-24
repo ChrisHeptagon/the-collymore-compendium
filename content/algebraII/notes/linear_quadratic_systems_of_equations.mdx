@@ -1,0 +1,110 @@
+---
+title: "Linear-Quadratic Systems of Equations"
+description: "Learn about this special type of equation system."
+date: "1/1/2023"
+thumbnail: /images/linquadeqsystemthumbnail.png
+---
+
+Linear and quadratic systems are systems of equations that consist of a linear equation and a quadratic equation.
+
+A linear equation looks like: $y = x - 3$ and a quadratic equation looks like: $y = x^2 + 4$
+
+<DesmosGraph divID="fsdsgdg" equations={['y = x - 3', 'y= x^2 + 4']}/>
+
+A linear and quadratic system is often shown as a line and a parabola on a graph. At each point where the line and parabola intersect, is a solution to the equation system.
+
+For instance, the linear and quadratic system shown below has two points that are solutions (where the quadratic and linear equation intersect)
+
+![Example of a Linear-Quadratic Equation](/images/two_solutions_graph.jpg)
+
+In a Linear-Quadratic equation system, the two equations on a graph can never intersect, or intersect once, or at most intersect twice. Thus, Linear-Quadratic equation systems can only have none, one or two solutions.
+
+
+![Combinations of Linear-Quadratic Equations](/images/linear-quadratic.png)
+
+When solving a Linear-Quadratic equation system, the main objective is to somehow combine the two equations into one with a single variable. The first step for combining the equations is to substitute the $y$ value in one of the equations with the other expression.
+
+## Model Example 1
+
+Take these two equations for instance: $y ​= x + 1$ and $y = x^2 - 1$
+
+Within a given system of equations,  all of the equations are equal to each other. Thus, in this case, the Algebraic statement $x+1= x^2-1$ would be true.
+
+Now it's possible for this equation to be solved, by solving the quadratic side for x for this example, with the next step being rewriting this equation in Quadratic form (Which is $ax^2 + bx + c$).
+
+First, subtract $1$ and $x$ from both sides of the equation. You should get $0 = x^2 - x - 2$
+
+The next step is to factor $0 = x^2 - x - 2$ by finding which numbers multiply to $c$ or $-2$ and add up to $b$ or $-1$. In this instance, the numbers that fit these requirements are $-2$ and $1$.
+
+Now, the value of $x$ can be determined; by plugging in these values into the expression $(x+a)(x+b)$ and solving for $x$ within these two expressions individually. The two $x$ values that should be determined if done correctly, are $x = 2$ and $x = -1$.
+
+Now, the value of $y$ can be determined; by plugging in the $x$ values into one of the expressions from the beginning of this example, in this case $y = x + 1$. The resulting $y$ value from $x = 2$ is $3$, and the resulting $y$ value from $x = -1$ is $0$.
+
+Thus, the two points of solution in this system of equations are $(2,3)$ and $(-1,0)$
+
+## Model Example 2
+
+In this Linear-Quadratic equation system, there are two equations $y = x$ and $y = x^2 - 6$
+
+First, substitute the $y$ value for one of the expressions with the other expression in the system. The equation should now look something like this: $x = x^2 - 6$.
+
+Next, remove $x$ from both sides of the equation. Result: $0 = x^2 - x - 6$
+
+Next, factor $0 = x^2 - x - 6$, by finding which numbers multiply to $c$ or $-6$ and add up to $b$ or $-1$. In this instance, the numbers that fit these requirements are $-3$ and $2$ (keep in mind the Quadratic equation $(ax^2 + bx + c)$).
+
+Now, the value of $x$ can be determined; by plugging in these values into the expression $(x+a)(x+b)$ and solving for $x$ within these two expressions individually. The two $x$ values that should be determined if done correctly, are $x = 3$ and $x = -2$.
+
+Now, the value of $y$ can be determined; by plugging in the $x$ values into one of the expressions from the beginning of this example, in this case $y = x$. The resulting $y$ value from $x = 3$ is $3$, and the resulting $y$ value from $x = -2$ is $-2$.
+
+
+Thus, the two points of solution in this system of equations are $(3,3)$ and $(-2,-2)$.
+
+## Practice Example 1
+
+### What is the solution to the system of equations $y = 3x - 2$ and $y = g(x)$ where $g(x)$ is defined by the function below?
+
+![Practice Example 1](/images/regcca2170105paraboloa.jpg)
+
+<DesmosCalc divID="pracexample1"/>
+
+<MultipleChoice quizLabel="Practice Example 1" choices={['{(0,-2)}','{(0,-2),(1,6)}','{(1,6)}','{(1,1),(6,16)}']} correctAns="{(1,1),(6,16)}"/>
+
+## Practice Example 2
+
+### What is the solution set of the following system of equations? :
+
+### $y = 3x + 6$ and $y = (x + 4)^2 - 10$
+
+<DesmosCalc divID="pracexample2"/>
+
+<MultipleChoice quizLabel="Practice Example 2" choices={['{(-5,-9)}','{(5,21)}','{(0,6),(-5,-9)}','{(0,6),(5,21)}']} correctAns="{(0,6),(-5,-9)}"/>
+
+## Practice Example 3
+
+### What are the solution(s) to the system of equations shown below?
+
+### $x^2 + y^2 = 5$ and $y = 2x$
+
+<DesmosCalc divID="pracexample3"/>
+
+<MultipleChoice quizLabel="Practice Example 3" choices={['x = 1 and x = -1','x = 1','(1,2) and (-1,-2)','(1,2) , only']} correctAns="(1,2) and (-1,-2)"/>
+
+## Practice Example 4
+
+### Solve the following system of equations algebraically.
+
+### $x^2 + y^2 = 400$ and $y = x - 28$
+
+<DesmosCalc divID="pracexample4"/>
+
+<ShortResponse quizLabel="Practice Example 4" regex="^(?=.*12)(?=.*16)(?=.*-12)(?=.*-16).+" />
+
+## Practice Example 5
+
+### Algebraically solve the following system of equations.
+
+### $(x-2)^2 + (y-3)^2 = 16$ and $x + y - 1 = 0$
+
+<DesmosCalc divID="pracexample5"/>
+
+<ShortResponse quizLabel="Practice Example 5" regex="^(?=.*2)(?=.*-2)(?=.*-1)(?=.*3).+" />
