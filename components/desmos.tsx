@@ -1,3 +1,4 @@
+'use client';
 import Script from "next/script";
 
 type DesmosProps = {
@@ -9,6 +10,7 @@ export function DesmosGraph(props: DesmosProps){
     const { divID, equations } = props;
     return (
     <div className="flex items-center justify-center p-10">
+        <Script strategy="beforeInteractive" src="/scripts/calculator.js" />
         <div id={divID} className="w-[1024px] h-[512px] border border-[#0011f8]">
         <Script id={divID}>{`
         var elt = document.getElementById('${divID}');

@@ -47,8 +47,8 @@ export default function IndexPage() {
   return (
     <div className="bg-[#3a5eff]">
       <div className=" flex p-4 flex-wrap justify-evenly">
-        {allDocuments.filter((unit) => unit.type === "AlgebraPosts" || "ChemistryPosts") 
-          .sort((a, b) => a.title.localeCompare(b.title, "en", { numeric: true }))
+        {allDocuments.filter((unit) => unit.type === "Subjects") 
+          .sort((a, b) => a.title.localeCompare(b.title))
           .map((unit, idx) => (
             <PostCard post={unit} key={idx}></PostCard>
           ))}

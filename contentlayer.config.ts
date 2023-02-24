@@ -55,12 +55,13 @@ const computedFields: ComputedFields = {
 const ChemistryPosts = PostType('ChemistryPosts', 'chemistry/notes/**/*.mdx')
 const AlgebraPosts = PostType('AlgebraPosts', 'algebraII/notes/**/*.mdx')
 
+const Subjects = UnitType('Subjects', '*.mdx')
 
 const ChemistryUnits = UnitType('ChemistryUnits', 'chemistry/units/**/*.mdx')
 
 export default makeSource({
   contentDirPath: 'content',
-  documentTypes: [ChemistryPosts, AlgebraPosts, ChemistryUnits],
+  documentTypes: [ChemistryPosts, AlgebraPosts, ChemistryUnits, Subjects],
   mdx: { 
     rehypePlugins: [rehypeKatex],
     remarkPlugins: [remarkMath, remarkGfm],

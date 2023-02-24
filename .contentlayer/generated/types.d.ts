@@ -59,6 +59,21 @@ export type ChemistryUnits = {
   body: MDX
   url: string
   slug: string
+}
+
+export type Subjects = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'Subjects'
+  /** The title of the post */
+  title: string
+  description: string
+  thumbnail?: string | undefined
+  /** MDX file body */
+  body: MDX
+  url: string
+  slug: string
 }  
 
 /** Nested types */
@@ -69,8 +84,8 @@ export type ChemistryUnits = {
 export type AllTypes = DocumentTypes | NestedTypes
 export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 
-export type DocumentTypes = AlgebraPosts | ChemistryPosts | ChemistryUnits
-export type DocumentTypeNames = 'AlgebraPosts' | 'ChemistryPosts' | 'ChemistryUnits'
+export type DocumentTypes = AlgebraPosts | ChemistryPosts | ChemistryUnits | Subjects
+export type DocumentTypeNames = 'AlgebraPosts' | 'ChemistryPosts' | 'ChemistryUnits' | 'Subjects'
 
 export type NestedTypes = never
 export type NestedTypeNames = never
@@ -94,6 +109,7 @@ export type DocumentTypeMap = {
   AlgebraPosts: AlgebraPosts
   ChemistryPosts: ChemistryPosts
   ChemistryUnits: ChemistryUnits
+  Subjects: Subjects
 }
 
 export type NestedTypeMap = {

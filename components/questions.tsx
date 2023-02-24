@@ -1,3 +1,4 @@
+'use client';
 import { ChangeEvent, FormEvent, use, useState } from "react"
 
 type QuestionProps = {
